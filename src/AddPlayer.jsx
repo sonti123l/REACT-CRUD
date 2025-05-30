@@ -29,15 +29,15 @@ const AddPlayer = ({onCancel,onAddPlayer,Players}) =>{
           <h1>Add new player</h1>
           <div className="InputDetails">
             <label htmlFor='name'>Name</label>
-            <input type='text' id='name' value={newName} onChange={(e) => setNewName(e.target.value)}></input>
+            <input type='text' id='name' value={newName} onChange={(e) => setNewName(e.target.value) required}></input>
           </div>
           <div className="InputDetails">
             <label htmlFor='age'>Age</label>
-            <input type='text' id='age' value={newAge} onChange={(e) => setNewAge(e.target.value)}></input>
+            <input type='text' id='age' value={newAge} onChange={(e) => setNewAge(e.target.value)} required></input>
           </div>
           <div className="InputDetails">
             <label htmlFor='position'>Position</label>
-            <input type='text' id='position' value={newPosition} onChange={(e) => setNewPosition(e.target.value)}></input>
+            <input type='text' id='position' value={newPosition} onChange={(e) => setNewPosition(e.target.value)} required></input>
           </div>
           <div className="Buttons">
             <button type='submit'>Submit</button>
