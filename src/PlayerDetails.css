@@ -1,0 +1,75 @@
+.DetailsName{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid black;
+    gap: 20px;
+}
+
+.detailsContainer{
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.167);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.DetailsName>h1{
+    margin-left: 425px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.detailsContainer:hover{
+    transform: translateY(-8px);
+    background-color: blue;
+    color: white;
+}
+
+.ButtonsInPlayer{
+    height: 120px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ButtonsInPlayer>button{
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+}
+
+.ButtonsInPlayer>button:hover{
+    background-color: rgba(0, 170, 255, 0.8);
+    color: white;
+    border: none;
+}
+
+#AddPlayer{
+    width: 100px;
+    height: 45px;
+    border-radius: 7px;
+    background-color: aqua;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+}

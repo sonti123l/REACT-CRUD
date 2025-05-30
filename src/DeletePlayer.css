@@ -1,0 +1,42 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.InsideDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 450px;
+}
+
+.InsideDiv>h3{
+    font-size: 24px;
+}
+
+.ButtonsDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 300px;
+}
+
+.ButtonsDiv>button{
+    width: 85px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 16px;
+    color: orange;
+}
+
+.ButtonsDiv>button:hover{
+    background-color: orange;
+    color: white;
+    border: none;
+}
