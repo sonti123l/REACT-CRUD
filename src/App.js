@@ -68,7 +68,7 @@ function App() {
     <>
     <PlayerDetails Players={players} addPlayer={handleShowForm} onEdit={handleEditId} onDelete={handleDelete}/>
     {showForm && (
-      <AddPlayer Players={players} onAddPlayer={handleAddPlayer} onCancel={() => setShowForm(false)}/>
+      <AddPlayer onAddPlayer={handleAddPlayer} onCancel={() => setShowForm(false)}/>
     )}  
     {showEditForm && editId!== null && (<EditDetails Players={players} onUpdatePlayer={handleUpdateDetails} onCancel={() => setShowEditForm(false)}  playerID={editId}/>
   )}
