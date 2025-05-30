@@ -11,7 +11,7 @@ const AddPlayer = ({onCancel,onAddPlayer,Players}) =>{
     const handleUpdaterList = (e) => {
     e.preventDefault();
     const newPlayer = {
-      id : length + 1,
+      id : Math.floor(Math.random()*1000),
       name : newName,
       age : parseInt(newAge),
       position : newPosition
