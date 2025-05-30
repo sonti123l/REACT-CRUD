@@ -1,9 +1,8 @@
 import { useState } from "react"
 import "./AddPlayer.css"
 
-const AddPlayer = ({onCancel,onAddPlayer,Players}) =>{
+const AddPlayer = ({onCancel,onAddPlayer}) =>{
 
-    const length = Players.length;
     const [newName,setNewName] = useState("");
     const [newAge,setNewAge] = useState("");
     const [newPosition,setNewPosition] = useState("");
