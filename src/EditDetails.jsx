@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./EditDetails.css";
 
 
 const EditDetails = ({Players,playerID,onUpdatePlayer,onCancel}) => {
@@ -30,17 +31,24 @@ const EditDetails = ({Players,playerID,onUpdatePlayer,onCancel}) => {
 
     return(
         <form onSubmit={handleSubmit}>
-            <label htmlFor="editName">Edit Name</label>
-            <input type="text" id="editName" value={newName} onChange={(e) => setNewName(e.target.value)}></input>
-            <br></br>
-            <label htmlFor="editAge">Edit Age</label>
-            <input type="text" id="editAge" value={newAge} onChange={(e) => setNewAge(e.target.value)}></input>
-            <br></br>
-            <label htmlFor="editPosition">Edit Position</label>
-            <input type="text" id="editPosition" value={newPosition} onChange={(e) => setNewPosition(e.target.value)}></input>
-            <br></br>
-            <button type="submit">Save</button>
-            <button type="button" onClick={onCancel}>cancel</button>
+            <h1>Edit Your Details</h1>
+            <div className="InputDetails">
+                <label htmlFor="editName">Edit Name</label>
+                <input type="text" id="editName" value={newName} onChange={(e) => setNewName(e.target.value)}></input>
+            </div>
+            <div className="InputDetails">
+                <label htmlFor="editAge">Edit Age</label>
+                <input type="text" id="editAge" value={newAge} onChange={(e) => setNewAge(e.target.value)}></input>
+            </div>
+            <div className="InputDetails">
+                <label htmlFor="editPosition">Edit Position</label>
+                <input type="text" id="editPosition" value={newPosition} onChange={(e) => setNewPosition(e.target.value)}></input>
+            </div>
+            <div className="Buttons">
+                <button type="submit">Save</button>
+                <button type="button" onClick={onCancel}>cancel</button>
+            </div>
+            
         </form>
     )
 
