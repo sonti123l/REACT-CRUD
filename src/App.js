@@ -38,7 +38,6 @@ function App() {
 
   // here we will implement the edited details in the PlayerDetails
   const handleEditId = (id) => {
-    console.log(id);
     setEditId(id);
     setShowEditForm(true);
   }
@@ -49,6 +48,7 @@ function App() {
   // These is to handle edit details
   const handleUpdateDetails = (updatedPlayer) => {
         setNewplayer(players.map((player) => player.id === updatedPlayer.id?updatedPlayer:player));
+        setShowEditForm(false);
     };
   // These is to handle edit details  
 
