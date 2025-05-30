@@ -29,7 +29,7 @@ const AddPlayer = ({onCancel,onAddPlayer,Players}) =>{
           <h1>Add new player</h1>
           <div className="InputDetails">
             <label htmlFor='name'>Name</label>
-            <input type='text' id='name' value={newName} onChange={(e) => setNewName(e.target.value) required}></input>
+            <input type='text' id='name' value={newName} onChange={(e) => setNewName(e.target.value)} required></input>
           </div>
           <div className="InputDetails">
             <label htmlFor='age'>Age</label>
