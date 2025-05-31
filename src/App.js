@@ -66,10 +66,14 @@ function App() {
 
   return(
     <>
-    <PlayerDetails Players={players} addPlayer={handleShowForm} onEdit={handleEditId} onDelete={handleDelete}/>
-    {showForm && (
-      <AddPlayer onAddPlayer={handleAddPlayer} onCancel={() => setShowForm(false)}/>
-    )}  
+    <div className= "AddContainer">
+        <PlayerDetails Players={players} addPlayer={handleShowForm} onEdit={handleEditId} onDelete={handleDelete}/>
+        <div className="SidePanel">
+            {showForm && (
+              <AddPlayer onAddPlayer={handleAddPlayer} onCancel={() => setShowForm(false)}/>
+            )}  
+          </div>  
+    </div>
     {showEditForm && editId!== null && (<EditDetails Players={players} onUpdatePlayer={handleUpdateDetails} onCancel={() => setShowEditForm(false)}  playerID={editId}/>
   )}
   {showDeleteForm && deleteId !== null && (<DeletePlayer Players={players} onConfirmDelete={handleDeleteDetails} onCancel={() => setShowDeleteForm(false)} playerID= {deleteId}/>)}
