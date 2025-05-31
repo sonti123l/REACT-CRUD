@@ -4,6 +4,7 @@ const PlayerDetails = ({Players,onEdit,onDelete,addPlayer}) => {
     return(
         <div className="DetailsName">
             <h1>CRUD APP FOR FOOTBALL PLAYERS TRACKING</h1>
+            <button onClick={addPlayer} id="AddPlayer">Add player</button>
                 {
                     Players.map((player) => (
                         <div key={player.id} className="detailsContainer">
@@ -20,9 +21,7 @@ const PlayerDetails = ({Players,onEdit,onDelete,addPlayer}) => {
                         </div>
                     ))
                 }
-            <button onClick={addPlayer} id="AddPlayer">Add player</button>
         </div>
-    
     )
 }
 
