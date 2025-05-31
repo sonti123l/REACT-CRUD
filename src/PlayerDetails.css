@@ -1,7 +1,7 @@
 .DetailsName{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     border: 1px solid black;
     gap: 20px;
